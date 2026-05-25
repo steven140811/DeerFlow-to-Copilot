@@ -1,0 +1,72 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="84" y1="40" x2="1196" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101214"/>
+      <stop offset="1" stop-color="#1E1A15"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 540) rotate(53.4) scale(222 245)">
+      <stop stop-color="#23272D" stop-opacity="0.54"/>
+      <stop offset="1" stop-color="#23272D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1120 92) rotate(57.3) scale(170 190)">
+      <stop stop-color="#26292E" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#26292E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="130" y1="96" x2="440" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5D66B"/>
+      <stop offset="1" stop-color="#DDAA27"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="604" y1="154" x2="1120" y2="530" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#191C20"/>
+      <stop offset="1" stop-color="#121418"/>
+    </linearGradient>
+    <filter id="shadow" x="540" y="120" width="612" height="430" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" rx="34" fill="url(#bg)"/>
+  <rect width="1280" height="640" rx="34" fill="url(#glowL)"/>
+  <rect width="1280" height="640" rx="34" fill="url(#glowR)"/>
+
+  <text x="110" y="124" fill="url(#accent)" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700">DeerFlow to Copilot</text>
+  <text x="110" y="168" fill="#D0CCC2" font-family="Segoe UI, Arial, sans-serif" font-size="24">A Copilot-first secondary development based on DeerFlow 2.0</text>
+  <text x="110" y="230" fill="#B3AFA5" font-family="Segoe UI, Arial, sans-serif" font-size="22">Launch locally, reuse the Copilot models already available in VS Code,</text>
+  <text x="110" y="266" fill="#B3AFA5" font-family="Segoe UI, Arial, sans-serif" font-size="22">and start working in the browser without adding a second model vendor on day one.</text>
+
+  <rect x="110" y="330" width="170" height="44" rx="22" fill="#1B1E22" stroke="#373C43"/>
+  <text x="195" y="358" text-anchor="middle" fill="#F4D466" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Copilot-first</text>
+
+  <rect x="294" y="330" width="184" height="44" rx="22" fill="#1B1E22" stroke="#373C43"/>
+  <text x="386" y="358" text-anchor="middle" fill="#DDD9CF" font-family="Segoe UI, Arial, sans-serif" font-size="18">Windows launch flow</text>
+
+  <rect x="110" y="392" width="188" height="44" rx="22" fill="#1B1E22" stroke="#373C43"/>
+  <text x="204" y="420" text-anchor="middle" fill="#DDD9CF" font-family="Segoe UI, Arial, sans-serif" font-size="18">Browser workspace</text>
+
+  <rect x="314" y="392" width="216" height="44" rx="22" fill="#1B1E22" stroke="#373C43"/>
+  <text x="422" y="420" text-anchor="middle" fill="#DDD9CF" font-family="Segoe UI, Arial, sans-serif" font-size="18">Bridge-backed model switching</text>
+
+  <g filter="url(#shadow)">
+    <rect x="570" y="146" width="552" height="356" rx="28" fill="url(#panel)" stroke="#30343C"/>
+  </g>
+
+  <text x="618" y="208" fill="#6A6F77" font-family="Segoe UI, Arial, sans-serif" font-size="24">What can I help you build today?</text>
+  <rect x="612" y="236" width="468" height="86" rx="22" fill="#15181B" stroke="#2D3239"/>
+  <text x="646" y="288" fill="#4F545C" font-family="Segoe UI, Arial, sans-serif" font-size="24">Ask DeerFlow to research, plan, write, or automate work.</text>
+
+  <rect x="628" y="356" width="122" height="42" rx="21" fill="#1A1D21" stroke="#393E46"/>
+  <text x="689" y="383" text-anchor="middle" fill="#F5D66B" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Ultra</text>
+
+  <text x="780" y="384" fill="#A39F96" font-family="Segoe UI, Arial, sans-serif" font-size="18">Reasoning: High</text>
+
+  <rect x="894" y="346" width="170" height="52" rx="18" fill="#15191D" stroke="#363C45"/>
+  <text x="979" y="378" text-anchor="middle" fill="#DDD9CF" font-family="Segoe UI, Arial, sans-serif" font-size="17">GPT-5 mini</text>
+
+  <rect x="646" y="440" width="130" height="40" rx="20" fill="#1A1D21" stroke="#363C45"/>
+  <rect x="790" y="440" width="118" height="40" rx="20" fill="#1A1D21" stroke="#363C45"/>
+  <rect x="922" y="440" width="132" height="40" rx="20" fill="#1A1D21" stroke="#363C45"/>
+
+  <text x="711" y="465" text-anchor="middle" fill="#DDD9CF" font-family="Segoe UI, Arial, sans-serif" font-size="16">Agents</text>
+  <text x="849" y="465" text-anchor="middle" fill="#DDD9CF" font-family="Segoe UI, Arial, sans-serif" font-size="16">Write</text>
+  <text x="988" y="465" text-anchor="middle" fill="#DDD9CF" font-family="Segoe UI, Arial, sans-serif" font-size="16">Research</text>
+</svg>

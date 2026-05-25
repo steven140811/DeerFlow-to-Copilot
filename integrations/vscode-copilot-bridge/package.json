@@ -1,0 +1,101 @@
+{
+  "name": "deerflow-vscode-copilot-bridge",
+  "displayName": "DeerFlow VS Code Copilot Bridge",
+  "description": "Loopback bridge from DeerFlow to VS Code Copilot Language Model API.",
+  "version": "0.0.1",
+  "publisher": "deerflow",
+  "private": true,
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "deerflowCopilotBridge.start",
+        "title": "DeerFlow Copilot Bridge: Start"
+      },
+      {
+        "command": "deerflowCopilotBridge.launchWorkbench",
+        "title": "DeerFlow Copilot Bridge: Launch Workbench"
+      },
+      {
+        "command": "deerflowCopilotBridge.openUi",
+        "title": "DeerFlow Copilot Bridge: Open DeerFlow UI"
+      },
+      {
+        "command": "deerflowCopilotBridge.configureAccount",
+        "title": "DeerFlow Copilot Bridge: Configure DeerFlow Account"
+      },
+      {
+        "command": "deerflowCopilotBridge.stop",
+        "title": "DeerFlow Copilot Bridge: Stop"
+      }
+    ],
+    "configuration": {
+      "title": "DeerFlow Copilot Bridge",
+      "properties": {
+        "deerflowCopilotBridge.host": {
+          "type": "string",
+          "default": "127.0.0.1",
+          "description": "Host interface for the local bridge. Keep this on loopback unless you fully trust the network."
+        },
+        "deerflowCopilotBridge.port": {
+          "type": "number",
+          "default": 8765,
+          "description": "Port for the local bridge."
+        },
+        "deerflowCopilotBridge.model": {
+          "type": "string",
+          "default": "gpt-5.4",
+          "description": "Preferred Copilot model id for warmup and copilot-auto requests."
+        },
+        "deerflowCopilotBridge.family": {
+          "type": "string",
+          "default": "",
+          "description": "Optional preferred Copilot model family, such as gpt-4o. Empty selects the first available Copilot model."
+        },
+        "deerflowCopilotBridge.reasoningEffort": {
+          "type": "string",
+          "default": "xhigh",
+          "description": "Default reasoning effort forwarded to Copilot requests when the caller does not specify one."
+        },
+        "deerflowCopilotBridge.requestTimeoutMs": {
+          "type": "number",
+          "default": 90000,
+          "description": "Timeout for real Copilot requests and warmup checks. When this expires, the bridge reports that model access is still pending."
+        },
+        "deerflowCopilotBridge.token": {
+          "type": "string",
+          "default": "",
+          "description": "Optional bearer token required by the bridge. Leave empty only when bound to loopback."
+        },
+        "deerflowCopilotBridge.autoStart": {
+          "type": "boolean",
+          "default": true,
+          "description": "Start the loopback bridge when VS Code starts. Model consent is still requested from user-initiated commands."
+        },
+        "deerflowCopilotBridge.launchTimeoutMs": {
+          "type": "number",
+          "default": 120000,
+          "description": "How long the one-click workbench launcher waits for DeerFlow local services before opening the UI anyway."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/vscode": "^1.95.0",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,69 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="60" x2="1180" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111315"/>
+      <stop offset="1" stop-color="#201C16"/>
+    </linearGradient>
+    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(170 610) rotate(54.3923) scale(230.838 270.341)">
+      <stop stop-color="#22262C" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#22262C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1100 120) rotate(61.6311) scale(180.443 200.912)">
+      <stop stop-color="#24272D" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="#24272D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="220" y1="184" x2="1060" y2="588" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#191B1F"/>
+      <stop offset="1" stop-color="#131418"/>
+    </linearGradient>
+    <linearGradient id="panelStroke" x1="240" y1="198" x2="1034" y2="544" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E323A"/>
+      <stop offset="1" stop-color="#21242A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="410" y1="74" x2="780" y2="172" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6D769"/>
+      <stop offset="1" stop-color="#DDAE2A"/>
+    </linearGradient>
+    <filter id="shadow" x="154" y="150" width="972" height="476" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="28" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="36" fill="url(#bg)"/>
+  <rect width="1280" height="720" rx="36" fill="url(#glowLeft)"/>
+  <rect width="1280" height="720" rx="36" fill="url(#glowRight)"/>
+
+  <text x="640" y="112" text-anchor="middle" fill="url(#accent)" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700">Hello, welcome back.</text>
+  <text x="640" y="152" text-anchor="middle" fill="#B7B3AA" font-family="Segoe UI, Arial, sans-serif" font-size="18">A Copilot-first DeerFlow workspace built for direct local launch and browser use.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="196" y="186" width="888" height="372" rx="30" fill="url(#panel)" stroke="url(#panelStroke)"/>
+  </g>
+
+  <text x="252" y="252" fill="#6E737B" font-family="Segoe UI, Arial, sans-serif" font-size="28">What can I help you build today?</text>
+
+  <rect x="232" y="292" width="816" height="96" rx="24" fill="#15171A" stroke="#2C3138"/>
+  <text x="272" y="349" fill="#4F545C" font-family="Segoe UI, Arial, sans-serif" font-size="28">Ask DeerFlow to research, plan, write, or automate work.</text>
+
+  <rect x="250" y="424" width="132" height="44" rx="22" fill="#1B1E22" stroke="#3B4048"/>
+  <text x="316" y="452" text-anchor="middle" fill="#F6D769" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Ultra</text>
+
+  <text x="414" y="452" fill="#A39F96" font-family="Segoe UI, Arial, sans-serif" font-size="20">Reasoning: High</text>
+
+  <rect x="690" y="414" width="276" height="56" rx="20" fill="#16191D" stroke="#333841"/>
+  <text x="828" y="448" text-anchor="middle" fill="#D8D5CE" font-family="Segoe UI, Arial, sans-serif" font-size="19">VS Code Copilot GPT-5 mini</text>
+
+  <circle cx="1015" cy="442" r="22" fill="#242931" stroke="#49515D"/>
+  <path d="M1015 433V451" stroke="#DCD8CF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1006 442H1024" stroke="#DCD8CF" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="280" y="514" width="142" height="46" rx="23" fill="#1A1D21" stroke="#363B44"/>
+  <rect x="442" y="514" width="128" height="46" rx="23" fill="#1A1D21" stroke="#363B44"/>
+  <rect x="590" y="514" width="132" height="46" rx="23" fill="#1A1D21" stroke="#363B44"/>
+  <rect x="742" y="514" width="136" height="46" rx="23" fill="#1A1D21" stroke="#363B44"/>
+
+  <text x="351" y="543" text-anchor="middle" fill="#D9D7D0" font-family="Segoe UI, Arial, sans-serif" font-size="18">Agents</text>
+  <text x="506" y="543" text-anchor="middle" fill="#D9D7D0" font-family="Segoe UI, Arial, sans-serif" font-size="18">Write</text>
+  <text x="656" y="543" text-anchor="middle" fill="#D9D7D0" font-family="Segoe UI, Arial, sans-serif" font-size="18">Research</text>
+  <text x="810" y="543" text-anchor="middle" fill="#D9D7D0" font-family="Segoe UI, Arial, sans-serif" font-size="18">Create</text>
+</svg>
